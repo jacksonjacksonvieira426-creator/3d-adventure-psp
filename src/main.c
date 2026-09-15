@@ -1,4 +1,4 @@
-// 3d-adventure - main.c gerado por V14
+// 3d-adventure - main.c gerado por V15
 #include <pspkernel.h>
 #include <string.h>
 #include <stdlib.h>
@@ -16,7 +16,7 @@ PSP_MAIN_THREAD_ATTR(THREAD_ATTR_USER);
 #define SCR_W 480
 #define SCR_H 272
 
-// Tipos J2ME (auto-detectados, dedup)
+// Tipos J2ME (sem colidir com classes do projeto)
 typedef void* Alert;
 typedef void* AlertType;
 typedef void* Boolean;
@@ -63,7 +63,6 @@ typedef void* ListItem;
 typedef void* Locale;
 typedef void* Long_x;
 typedef void* MIDlet;
-typedef void* MIDlet1;
 typedef void* Manager;
 typedef void* Math;
 typedef void* Object;
@@ -94,7 +93,6 @@ typedef void* TimeZone;
 typedef void* Timer;
 typedef void* TimerTask;
 typedef void* Vector;
-typedef void* a;
 
 // Stubs de biblioteca
 void j2me_canvas_repaint(void) { }
@@ -102,7 +100,7 @@ void j2me_canvas_serviceRepaints(void) { }
 void j2me_gc(void) { }
 void* j2me_image_get_graphics(void* img) { return img; }
 
-// Forward typedefs
+// Forward typedefs das classes do projeto
 typedef struct MIDlet1_s MIDlet1;
 typedef struct MIDlet1_s MIDlet1_s;
 typedef struct a_s a;
