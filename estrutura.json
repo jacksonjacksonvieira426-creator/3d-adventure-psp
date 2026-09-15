@@ -1,0 +1,4248 @@
+{
+  "jar": "3D-Adventure.jar",
+  "nome_projeto": "3d-adventure",
+  "midlet": "MIDlet1",
+  "canvas": "a",
+  "classes": [
+    {
+      "arquivo": "adventure/MIDlet1.class",
+      "nome": "MIDlet1",
+      "super": "MIDlet",
+      "campos": [
+        {
+          "nome": "a",
+          "desc": "Ladventure/MIDlet1;",
+          "tipo_c": "MIDlet1*"
+        },
+        {
+          "nome": "if",
+          "desc": "Ljavax/microedition/lcdui/Display;",
+          "tipo_c": "Display*"
+        },
+        {
+          "nome": "do",
+          "desc": "Ladventure/a;",
+          "tipo_c": "a*"
+        }
+      ],
+      "metodos": [
+        {
+          "nome": "<init>",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 10,
+          "apis": {
+            "javax/microedition/midlet/MIDlet.<init>": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              1,
+              "javax/microedition/midlet/MIDlet.<init>"
+            ]
+          ],
+          "fields": [
+            [
+              6,
+              "putfield",
+              "MIDlet1.do"
+            ],
+            [
+              8,
+              "putstatic",
+              "MIDlet1.a"
+            ]
+          ]
+        },
+        {
+          "nome": "startApp",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 8,
+          "apis": {
+            "javax/microedition/lcdui/Display.getDisplay": 1,
+            "javax/microedition/lcdui/Display.setCurrent": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              1,
+              "javax/microedition/lcdui/Display.getDisplay"
+            ],
+            [
+              6,
+              "javax/microedition/lcdui/Display.setCurrent"
+            ]
+          ],
+          "fields": [
+            [
+              2,
+              "putstatic",
+              "MIDlet1.if"
+            ],
+            [
+              3,
+              "getstatic",
+              "MIDlet1.if"
+            ],
+            [
+              5,
+              "getfield",
+              "MIDlet1.do"
+            ]
+          ]
+        },
+        {
+          "nome": "pauseApp",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 1,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": []
+        },
+        {
+          "nome": "destroyApp",
+          "desc": "(Z)V",
+          "tipo_ret": "void",
+          "n_instr": 1,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": []
+        },
+        {
+          "nome": "a",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 8,
+          "apis": {
+            "javax/microedition/midlet/MIDlet.notifyDestroyed": 1
+          },
+          "constantes": [
+            [
+              1,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              4,
+              "javax/microedition/midlet/MIDlet.notifyDestroyed"
+            ]
+          ],
+          "fields": [
+            [
+              0,
+              "getstatic",
+              "MIDlet1.a"
+            ],
+            [
+              3,
+              "getstatic",
+              "MIDlet1.a"
+            ],
+            [
+              6,
+              "putstatic",
+              "MIDlet1.a"
+            ]
+          ]
+        },
+        {
+          "nome": "<clinit>",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "putstatic",
+              "MIDlet1.if"
+            ]
+          ]
+        }
+      ],
+      "apis": {
+        "javax/microedition/midlet/MIDlet.<init>": 1,
+        "javax/microedition/lcdui/Display.getDisplay": 1,
+        "javax/microedition/lcdui/Display.setCurrent": 1,
+        "javax/microedition/midlet/MIDlet.notifyDestroyed": 1
+      },
+      "padroes": [
+        "MIDLET",
+        "TEM_STARTAPP"
+      ]
+    },
+    {
+      "arquivo": "adventure/a.class",
+      "nome": "a",
+      "super": "Canvas",
+      "campos": [
+        {
+          "nome": "s",
+          "desc": "Lcom/nokia/mid/ui/DirectGraphics;",
+          "tipo_c": "DirectGraphics*"
+        },
+        {
+          "nome": "Q",
+          "desc": "Ljavax/microedition/lcdui/Graphics;",
+          "tipo_c": "Graphics*"
+        },
+        {
+          "nome": "a1",
+          "desc": "Ljavax/microedition/lcdui/Image;",
+          "tipo_c": "Image*"
+        },
+        {
+          "nome": "o",
+          "desc": "Ljavax/microedition/lcdui/Image;",
+          "tipo_c": "Image*"
+        },
+        {
+          "nome": "aD",
+          "desc": "Ljavax/microedition/lcdui/Image;",
+          "tipo_c": "Image*"
+        },
+        {
+          "nome": "F",
+          "desc": "Ljavax/microedition/lcdui/Image;",
+          "tipo_c": "Image*"
+        },
+        {
+          "nome": "for",
+          "desc": "Ljavax/microedition/lcdui/Image;",
+          "tipo_c": "Image*"
+        },
+        {
+          "nome": "aV",
+          "desc": "[B",
+          "tipo_c": "signed char*"
+        },
+        {
+          "nome": "f",
+          "desc": "Lcom/nokia/mid/sound/Sound;",
+          "tipo_c": "Sound*"
+        },
+        {
+          "nome": "aU",
+          "desc": "[B",
+          "tipo_c": "signed char*"
+        },
+        {
+          "nome": "d",
+          "desc": "Lcom/nokia/mid/sound/Sound;",
+          "tipo_c": "Sound*"
+        },
+        {
+          "nome": "aT",
+          "desc": "[B",
+          "tipo_c": "signed char*"
+        },
+        {
+          "nome": "b",
+          "desc": "Lcom/nokia/mid/sound/Sound;",
+          "tipo_c": "Sound*"
+        },
+        {
+          "nome": "byte",
+          "desc": "Ljavax/microedition/lcdui/StringItem;",
+          "tipo_c": "StringItem*"
+        },
+        {
+          "nome": "n",
+          "desc": "Ljavax/microedition/lcdui/Form;",
+          "tipo_c": "Form*"
+        },
+        {
+          "nome": "try",
+          "desc": "Ljavax/microedition/lcdui/StringItem;",
+          "tipo_c": "StringItem*"
+        },
+        {
+          "nome": "U",
+          "desc": "Ljavax/microedition/lcdui/Form;",
+          "tipo_c": "Form*"
+        },
+        {
+          "nome": "aO",
+          "desc": "Ljavax/microedition/lcdui/Font;",
+          "tipo_c": "Font*"
+        },
+        {
+          "nome": "t",
+          "desc": "Ljavax/microedition/lcdui/List;",
+          "tipo_c": "List*"
+        },
+        {
+          "nome": "g",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "e",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "ab",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "Z",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "ax",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "l",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "j",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "J",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "H",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "c",
+          "desc": "J",
+          "tipo_c": "int64_t"
+        },
+        {
+          "nome": "void",
+          "desc": "J",
+          "tipo_c": "int64_t"
+        },
+        {
+          "nome": "a",
+          "desc": "J",
+          "tipo_c": "int64_t"
+        },
+        {
+          "nome": "bh",
+          "desc": "J",
+          "tipo_c": "int64_t"
+        },
+        {
+          "nome": "else",
+          "desc": "J",
+          "tipo_c": "int64_t"
+        },
+        {
+          "nome": "a8",
+          "desc": "J",
+          "tipo_c": "int64_t"
+        },
+        {
+          "nome": "case",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "ai",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "X",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "aR",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "K",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "al",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "bg",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "do",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "a7",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "a6",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "aS",
+          "desc": "[B",
+          "tipo_c": "signed char*"
+        },
+        {
+          "nome": "w",
+          "desc": "B",
+          "tipo_c": "signed char"
+        },
+        {
+          "nome": "bb",
+          "desc": "B",
+          "tipo_c": "signed char"
+        },
+        {
+          "nome": "m",
+          "desc": "B",
+          "tipo_c": "signed char"
+        },
+        {
+          "nome": "R",
+          "desc": "[B",
+          "tipo_c": "signed char*"
+        },
+        {
+          "nome": "a4",
+          "desc": "S",
+          "tipo_c": "short"
+        },
+        {
+          "nome": "aH",
+          "desc": "S",
+          "tipo_c": "short"
+        },
+        {
+          "nome": "ac",
+          "desc": "S",
+          "tipo_c": "short"
+        },
+        {
+          "nome": "aa",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "Y",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "be",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "bc",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "V",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "new",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "aK",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "ar",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "aM",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "aL",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "null",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "D",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "goto",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "aN",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "af",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "aZ",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "aY",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "aX",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "aI",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "ba",
+          "desc": "B",
+          "tipo_c": "signed char"
+        },
+        {
+          "nome": "G",
+          "desc": "B",
+          "tipo_c": "signed char"
+        },
+        {
+          "nome": "i",
+          "desc": "B",
+          "tipo_c": "signed char"
+        },
+        {
+          "nome": "aP",
+          "desc": "B",
+          "tipo_c": "signed char"
+        },
+        {
+          "nome": "aW",
+          "desc": "B",
+          "tipo_c": "signed char"
+        },
+        {
+          "nome": "B",
+          "desc": "B",
+          "tipo_c": "signed char"
+        },
+        {
+          "nome": "char",
+          "desc": "B",
+          "tipo_c": "signed char"
+        },
+        {
+          "nome": "ae",
+          "desc": "B",
+          "tipo_c": "signed char"
+        },
+        {
+          "nome": "C",
+          "desc": "B",
+          "tipo_c": "signed char"
+        },
+        {
+          "nome": "P",
+          "desc": "B",
+          "tipo_c": "signed char"
+        },
+        {
+          "nome": "if",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "k",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "h",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "a9",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "ay",
+          "desc": "[S",
+          "tipo_c": "short*"
+        },
+        {
+          "nome": "aw",
+          "desc": "[S",
+          "tipo_c": "short*"
+        },
+        {
+          "nome": "au",
+          "desc": "[S",
+          "tipo_c": "short*"
+        },
+        {
+          "nome": "at",
+          "desc": "[S",
+          "tipo_c": "short*"
+        },
+        {
+          "nome": "as",
+          "desc": "[S",
+          "tipo_c": "short*"
+        },
+        {
+          "nome": "aq",
+          "desc": "[S",
+          "tipo_c": "short*"
+        },
+        {
+          "nome": "ao",
+          "desc": "[S",
+          "tipo_c": "short*"
+        },
+        {
+          "nome": "an",
+          "desc": "[S",
+          "tipo_c": "short*"
+        },
+        {
+          "nome": "ak",
+          "desc": "[S",
+          "tipo_c": "short*"
+        },
+        {
+          "nome": "r",
+          "desc": "[S",
+          "tipo_c": "short*"
+        },
+        {
+          "nome": "p",
+          "desc": "[S",
+          "tipo_c": "short*"
+        },
+        {
+          "nome": "a3",
+          "desc": "[S",
+          "tipo_c": "short*"
+        },
+        {
+          "nome": "aF",
+          "desc": "[S",
+          "tipo_c": "short*"
+        },
+        {
+          "nome": "q",
+          "desc": "[S",
+          "tipo_c": "short*"
+        },
+        {
+          "nome": "bf",
+          "desc": "[S",
+          "tipo_c": "short*"
+        },
+        {
+          "nome": "N",
+          "desc": "[S",
+          "tipo_c": "short*"
+        },
+        {
+          "nome": "M",
+          "desc": "[S",
+          "tipo_c": "short*"
+        },
+        {
+          "nome": "bd",
+          "desc": "[[S",
+          "tipo_c": "short**"
+        },
+        {
+          "nome": "aE",
+          "desc": "[S",
+          "tipo_c": "short*"
+        },
+        {
+          "nome": "ah",
+          "desc": "[S",
+          "tipo_c": "short*"
+        },
+        {
+          "nome": "a2",
+          "desc": "[[S",
+          "tipo_c": "short**"
+        },
+        {
+          "nome": "aG",
+          "desc": "[S",
+          "tipo_c": "short*"
+        },
+        {
+          "nome": "a0",
+          "desc": "[[I",
+          "tipo_c": "int**"
+        },
+        {
+          "nome": "I",
+          "desc": "[S",
+          "tipo_c": "short*"
+        },
+        {
+          "nome": "int",
+          "desc": "[S",
+          "tipo_c": "short*"
+        },
+        {
+          "nome": "aj",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "ad",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "T",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "u",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "L",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "O",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "E",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "A",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "z",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "y",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "a5",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "long",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "aJ",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "S",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "v",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "aA",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "am",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "x",
+          "desc": "[I",
+          "tipo_c": "int*"
+        },
+        {
+          "nome": "aQ",
+          "desc": "[I",
+          "tipo_c": "int*"
+        },
+        {
+          "nome": "aB",
+          "desc": "[[I",
+          "tipo_c": "int**"
+        },
+        {
+          "nome": "az",
+          "desc": "[[I",
+          "tipo_c": "int**"
+        },
+        {
+          "nome": "av",
+          "desc": "[S",
+          "tipo_c": "short*"
+        },
+        {
+          "nome": "ag",
+          "desc": "[S",
+          "tipo_c": "short*"
+        },
+        {
+          "nome": "aC",
+          "desc": "[[B",
+          "tipo_c": "signed char**"
+        },
+        {
+          "nome": "ap",
+          "desc": "[[J",
+          "tipo_c": "int64_t**"
+        },
+        {
+          "nome": "W",
+          "desc": "[[B",
+          "tipo_c": "signed char**"
+        }
+      ],
+      "metodos": [
+        {
+          "nome": "<init>",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 1957,
+          "apis": {
+            "com/nokia/mid/ui/FullCanvas.<init>": 1,
+            "com/nokia/mid/sound/Sound.<init>": 3,
+            "javax/microedition/lcdui/StringItem.<init>": 2,
+            "javax/microedition/lcdui/Form.<init>": 2,
+            "javax/microedition/lcdui/List.<init>": 1,
+            "java/lang/Throwable.printStackTrace": 1
+          },
+          "constantes": [
+            [
+              3,
+              18
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              11,
+              74
+            ],
+            [
+              14,
+              2
+            ],
+            [
+              15,
+              58
+            ],
+            [
+              18,
+              3
+            ],
+            [
+              19,
+              64
+            ],
+            [
+              22,
+              4
+            ],
+            [
+              23,
+              4
+            ],
+            [
+              26,
+              5
+            ],
+            [
+              27,
+              0
+            ],
+            [
+              30,
+              6
+            ],
+            [
+              31,
+              19
+            ],
+            [
+              34,
+              7
+            ],
+            [
+              35,
+              28
+            ],
+            [
+              38,
+              8
+            ],
+            [
+              39,
+              -59
+            ],
+            [
+              42,
+              9
+            ]
+          ],
+          "chamadas": [
+            [
+              1,
+              "com/nokia/mid/ui/FullCanvas.<init>"
+            ],
+            [
+              84,
+              "com/nokia/mid/sound/Sound.<init>"
+            ],
+            [
+              164,
+              "com/nokia/mid/sound/Sound.<init>"
+            ],
+            [
+              240,
+              "com/nokia/mid/sound/Sound.<init>"
+            ],
+            [
+              247,
+              "javax/microedition/lcdui/StringItem.<init>"
+            ],
+            [
+              253,
+              "javax/microedition/lcdui/Form.<init>"
+            ],
+            [
+              260,
+              "javax/microedition/lcdui/StringItem.<init>"
+            ],
+            [
+              266,
+              "javax/microedition/lcdui/Form.<init>"
+            ],
+            [
+              273,
+              "javax/microedition/lcdui/List.<init>"
+            ],
+            [
+              1955,
+              "java/lang/Throwable.printStackTrace"
+            ]
+          ],
+          "fields": [
+            [
+              77,
+              "putfield",
+              "a.aV"
+            ],
+            [
+              82,
+              "getfield",
+              "a.aV"
+            ],
+            [
+              85,
+              "putfield",
+              "a.f"
+            ],
+            [
+              157,
+              "putfield",
+              "a.aU"
+            ],
+            [
+              162,
+              "getfield",
+              "a.aU"
+            ],
+            [
+              165,
+              "putfield",
+              "a.d"
+            ],
+            [
+              233,
+              "putfield",
+              "a.aT"
+            ],
+            [
+              238,
+              "getfield",
+              "a.aT"
+            ],
+            [
+              241,
+              "putfield",
+              "a.b"
+            ],
+            [
+              248,
+              "putfield",
+              "a.byte"
+            ],
+            [
+              254,
+              "putfield",
+              "a.n"
+            ],
+            [
+              261,
+              "putfield",
+              "a.try"
+            ],
+            [
+              267,
+              "putfield",
+              "a.U"
+            ],
+            [
+              274,
+              "putfield",
+              "a.t"
+            ],
+            [
+              277,
+              "putfield",
+              "a.J"
+            ],
+            [
+              280,
+              "putfield",
+              "a.H"
+            ],
+            [
+              283,
+              "putfield",
+              "a.c"
+            ],
+            [
+              286,
+              "putfield",
+              "a.void"
+            ],
+            [
+              289,
+              "putfield",
+              "a.case"
+            ],
+            [
+              292,
+              "putfield",
+              "a.ai"
+            ]
+          ]
+        },
+        {
+          "nome": "if",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 136,
+          "apis": {
+            "javax/microedition/lcdui/Canvas.getHeight": 1,
+            "javax/microedition/lcdui/Image.createImage": 5,
+            "javax/microedition/lcdui/Image.getGraphics": 1,
+            "javax/microedition/lcdui/Graphics.fillRect": 1,
+            "javax/microedition/lcdui/List.append": 5,
+            "javax/microedition/lcdui/Displayable.setCommandListener": 3,
+            "javax/microedition/lcdui/Font.getFont": 1,
+            "javax/microedition/lcdui/Form.append": 2,
+            "javax/microedition/lcdui/Command.<init>": 2,
+            "javax/microedition/lcdui/Displayable.addCommand": 2
+          },
+          "constantes": [
+            [
+              2,
+              130
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              24,
+              112
+            ],
+            [
+              25,
+              92
+            ],
+            [
+              35,
+              0
+            ],
+            [
+              36,
+              0
+            ],
+            [
+              37,
+              112
+            ],
+            [
+              38,
+              92
+            ],
+            [
+              75,
+              64
+            ],
+            [
+              76,
+              0
+            ],
+            [
+              77,
+              8
+            ],
+            [
+              101,
+              2
+            ],
+            [
+              102,
+              2
+            ],
+            [
+              110,
+              2
+            ],
+            [
+              111,
+              2
+            ],
+            [
+              123,
+              1
+            ],
+            [
+              126,
+              1
+            ],
+            [
+              129,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              1,
+              "javax/microedition/lcdui/Canvas.getHeight"
+            ],
+            [
+              9,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              13,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              17,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              21,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              26,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              31,
+              "javax/microedition/lcdui/Image.getGraphics"
+            ],
+            [
+              39,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              44,
+              "javax/microedition/lcdui/List.append"
+            ],
+            [
+              50,
+              "javax/microedition/lcdui/List.append"
+            ],
+            [
+              56,
+              "javax/microedition/lcdui/List.append"
+            ],
+            [
+              62,
+              "javax/microedition/lcdui/List.append"
+            ],
+            [
+              68,
+              "javax/microedition/lcdui/List.append"
+            ],
+            [
+              73,
+              "javax/microedition/lcdui/Displayable.setCommandListener"
+            ],
+            [
+              78,
+              "javax/microedition/lcdui/Font.getFont"
+            ],
+            [
+              88,
+              "javax/microedition/lcdui/Form.append"
+            ],
+            [
+              94,
+              "javax/microedition/lcdui/Form.append"
+            ],
+            [
+              103,
+              "javax/microedition/lcdui/Command.<init>"
+            ],
+            [
+              104,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ],
+            [
+              112,
+              "javax/microedition/lcdui/Command.<init>"
+            ]
+          ],
+          "fields": [
+            [
+              6,
+              "putfield",
+              "a.v"
+            ],
+            [
+              10,
+              "putfield",
+              "a.aD"
+            ],
+            [
+              14,
+              "putfield",
+              "a.F"
+            ],
+            [
+              18,
+              "putfield",
+              "a.o"
+            ],
+            [
+              22,
+              "putfield",
+              "a.for"
+            ],
+            [
+              27,
+              "putfield",
+              "a.a1"
+            ],
+            [
+              30,
+              "getfield",
+              "a.a1"
+            ],
+            [
+              32,
+              "putfield",
+              "a.Q"
+            ],
+            [
+              34,
+              "getfield",
+              "a.Q"
+            ],
+            [
+              41,
+              "getfield",
+              "a.t"
+            ],
+            [
+              47,
+              "getfield",
+              "a.t"
+            ],
+            [
+              53,
+              "getfield",
+              "a.t"
+            ],
+            [
+              59,
+              "getfield",
+              "a.t"
+            ],
+            [
+              65,
+              "getfield",
+              "a.t"
+            ],
+            [
+              71,
+              "getfield",
+              "a.t"
+            ],
+            [
+              79,
+              "putfield",
+              "a.aO"
+            ],
+            [
+              83,
+              "putfield",
+              "a.P"
+            ],
+            [
+              85,
+              "getfield",
+              "a.n"
+            ],
+            [
+              87,
+              "getfield",
+              "a.byte"
+            ],
+            [
+              91,
+              "getfield",
+              "a.U"
+            ]
+          ]
+        },
+        {
+          "nome": "try",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 11,
+          "apis": {
+            "java/lang/Thread.currentThread": 2,
+            "java/lang/Thread.<init>": 1,
+            "java/lang/Thread.start": 2
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              0,
+              "java/lang/Thread.currentThread"
+            ],
+            [
+              5,
+              "java/lang/Thread.<init>"
+            ],
+            [
+              6,
+              "java/lang/Thread.start"
+            ],
+            [
+              8,
+              "java/lang/Thread.currentThread"
+            ],
+            [
+              9,
+              "java/lang/Thread.start"
+            ]
+          ],
+          "fields": []
+        },
+        {
+          "nome": "keyPressed",
+          "desc": "(I)V",
+          "tipo_ret": "void",
+          "n_instr": 185,
+          "apis": {
+            "javax/microedition/lcdui/List.size": 2,
+            "javax/microedition/lcdui/List.append": 1,
+            "javax/microedition/lcdui/List.delete": 1,
+            "javax/microedition/lcdui/List.setSelectedIndex": 1,
+            "javax/microedition/lcdui/Display.setCurrent": 1,
+            "com/nokia/mid/sound/Sound.play": 2
+          },
+          "constantes": [
+            [
+              9,
+              6
+            ],
+            [
+              18,
+              0
+            ],
+            [
+              24,
+              5
+            ],
+            [
+              28,
+              5
+            ],
+            [
+              32,
+              0
+            ],
+            [
+              33,
+              1
+            ],
+            [
+              43,
+              1
+            ],
+            [
+              47,
+              1
+            ],
+            [
+              51,
+              1
+            ],
+            [
+              55,
+              1
+            ],
+            [
+              59,
+              1
+            ],
+            [
+              63,
+              1
+            ],
+            [
+              67,
+              1
+            ],
+            [
+              73,
+              0
+            ],
+            [
+              76,
+              0
+            ],
+            [
+              79,
+              0
+            ],
+            [
+              82,
+              0
+            ],
+            [
+              85,
+              0
+            ],
+            [
+              88,
+              0
+            ],
+            [
+              92,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              8,
+              "javax/microedition/lcdui/List.size"
+            ],
+            [
+              15,
+              "javax/microedition/lcdui/List.append"
+            ],
+            [
+              23,
+              "javax/microedition/lcdui/List.size"
+            ],
+            [
+              29,
+              "javax/microedition/lcdui/List.delete"
+            ],
+            [
+              34,
+              "javax/microedition/lcdui/List.setSelectedIndex"
+            ],
+            [
+              38,
+              "javax/microedition/lcdui/Display.setCurrent"
+            ],
+            [
+              107,
+              "com/nokia/mid/sound/Sound.play"
+            ],
+            [
+              140,
+              "com/nokia/mid/sound/Sound.play"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "a.al"
+            ],
+            [
+              4,
+              "getfield",
+              "a.a9"
+            ],
+            [
+              7,
+              "getfield",
+              "a.t"
+            ],
+            [
+              12,
+              "getfield",
+              "a.t"
+            ],
+            [
+              19,
+              "putfield",
+              "a.a9"
+            ],
+            [
+              22,
+              "getfield",
+              "a.t"
+            ],
+            [
+              27,
+              "getfield",
+              "a.t"
+            ],
+            [
+              31,
+              "getfield",
+              "a.t"
+            ],
+            [
+              35,
+              "getstatic",
+              "MIDlet1.if"
+            ],
+            [
+              37,
+              "getfield",
+              "a.t"
+            ],
+            [
+              44,
+              "putfield",
+              "a.aj"
+            ],
+            [
+              48,
+              "putfield",
+              "a.L"
+            ],
+            [
+              52,
+              "putfield",
+              "a.ad"
+            ],
+            [
+              56,
+              "putfield",
+              "a.O"
+            ],
+            [
+              60,
+              "putfield",
+              "a.T"
+            ],
+            [
+              64,
+              "putfield",
+              "a.u"
+            ],
+            [
+              68,
+              "putfield",
+              "a.al"
+            ],
+            [
+              70,
+              "getfield",
+              "a.i"
+            ],
+            [
+              74,
+              "putfield",
+              "a.i"
+            ],
+            [
+              77,
+              "putfield",
+              "a.K"
+            ]
+          ]
+        },
+        {
+          "nome": "keyReleased",
+          "desc": "(I)V",
+          "tipo_ret": "void",
+          "n_instr": 26,
+          "apis": {},
+          "constantes": [
+            [
+              3,
+              0
+            ],
+            [
+              7,
+              0
+            ],
+            [
+              11,
+              0
+            ],
+            [
+              15,
+              0
+            ],
+            [
+              19,
+              0
+            ],
+            [
+              23,
+              0
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              4,
+              "putfield",
+              "a.aj"
+            ],
+            [
+              8,
+              "putfield",
+              "a.L"
+            ],
+            [
+              12,
+              "putfield",
+              "a.ad"
+            ],
+            [
+              16,
+              "putfield",
+              "a.O"
+            ],
+            [
+              20,
+              "putfield",
+              "a.T"
+            ],
+            [
+              24,
+              "putfield",
+              "a.u"
+            ]
+          ]
+        },
+        {
+          "nome": "run",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 1769,
+          "apis": {
+            "javax/microedition/lcdui/Display.setCurrent": 2,
+            "javax/microedition/lcdui/Canvas.repaint": 3,
+            "com/nokia/mid/sound/Sound.play": 4,
+            "java/lang/Thread.yield": 1,
+            "java/lang/Thread.sleep": 1
+          },
+          "constantes": [
+            [
+              7,
+              1
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              13,
+              14
+            ],
+            [
+              16,
+              1
+            ],
+            [
+              23,
+              0
+            ],
+            [
+              26,
+              0
+            ],
+            [
+              36,
+              0
+            ],
+            [
+              39,
+              0
+            ],
+            [
+              42,
+              1
+            ],
+            [
+              45,
+              1
+            ],
+            [
+              58,
+              8
+            ],
+            [
+              62,
+              24
+            ],
+            [
+              65,
+              9000
+            ],
+            [
+              69,
+              -9000
+            ],
+            [
+              73,
+              16
+            ],
+            [
+              76,
+              9000
+            ],
+            [
+              80,
+              -9000
+            ],
+            [
+              90,
+              2
+            ],
+            [
+              98,
+              9000
+            ],
+            [
+              100,
+              30000
+            ]
+          ],
+          "chamadas": [
+            [
+              30,
+              "javax/microedition/lcdui/Display.setCurrent"
+            ],
+            [
+              49,
+              "javax/microedition/lcdui/Display.setCurrent"
+            ],
+            [
+              51,
+              "javax/microedition/lcdui/Canvas.repaint"
+            ],
+            [
+              1490,
+              "com/nokia/mid/sound/Sound.play"
+            ],
+            [
+              1550,
+              "com/nokia/mid/sound/Sound.play"
+            ],
+            [
+              1610,
+              "com/nokia/mid/sound/Sound.play"
+            ],
+            [
+              1672,
+              "com/nokia/mid/sound/Sound.play"
+            ],
+            [
+              1755,
+              "javax/microedition/lcdui/Canvas.repaint"
+            ],
+            [
+              1762,
+              "javax/microedition/lcdui/Canvas.repaint"
+            ],
+            [
+              1763,
+              "java/lang/Thread.yield"
+            ],
+            [
+              1765,
+              "java/lang/Thread.sleep"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "a.al"
+            ],
+            [
+              4,
+              "getfield",
+              "a.if"
+            ],
+            [
+              8,
+              "putfield",
+              "a.aP"
+            ],
+            [
+              11,
+              "putfield",
+              "a.if"
+            ],
+            [
+              14,
+              "putfield",
+              "a.m"
+            ],
+            [
+              17,
+              "putfield",
+              "a.bg"
+            ],
+            [
+              20,
+              "getfield",
+              "a.ae"
+            ],
+            [
+              24,
+              "putfield",
+              "a.al"
+            ],
+            [
+              27,
+              "putfield",
+              "a.X"
+            ],
+            [
+              28,
+              "getstatic",
+              "MIDlet1.if"
+            ],
+            [
+              33,
+              "getfield",
+              "a.k"
+            ],
+            [
+              37,
+              "putfield",
+              "a.al"
+            ],
+            [
+              40,
+              "putfield",
+              "a.k"
+            ],
+            [
+              43,
+              "putfield",
+              "a.ai"
+            ],
+            [
+              46,
+              "putfield",
+              "a.S"
+            ],
+            [
+              47,
+              "getstatic",
+              "MIDlet1.if"
+            ],
+            [
+              54,
+              "getfield",
+              "a.T"
+            ],
+            [
+              57,
+              "getfield",
+              "a.ax"
+            ],
+            [
+              61,
+              "getfield",
+              "a.ax"
+            ],
+            [
+              66,
+              "putfield",
+              "a.a6"
+            ]
+          ]
+        },
+        {
+          "nome": "paint",
+          "desc": "(Ljavax/microedition/lcdui/Graphics;)V",
+          "tipo_ret": "void",
+          "n_instr": 641,
+          "apis": {
+            "javax/microedition/lcdui/Graphics.fillRect": 8,
+            "javax/microedition/lcdui/Graphics.drawImage": 3,
+            "com/nokia/mid/ui/DirectUtils.getDirectGraphics": 1,
+            "javax/microedition/lcdui/Graphics.drawLine": 2,
+            "javax/microedition/lcdui/Graphics.setColor": 3,
+            "com/nokia/mid/ui/DirectGraphics.drawPixels": 16,
+            "javax/microedition/lcdui/Graphics.setFont": 1,
+            "javax/microedition/lcdui/Graphics.drawString": 5,
+            "java/lang/String.valueOf": 2,
+            "java/lang/String.concat": 1
+          },
+          "constantes": [
+            [
+              7,
+              0
+            ],
+            [
+              11,
+              0
+            ],
+            [
+              12,
+              0
+            ],
+            [
+              13,
+              128
+            ],
+            [
+              14,
+              128
+            ],
+            [
+              19,
+              15
+            ],
+            [
+              20,
+              25
+            ],
+            [
+              21,
+              20
+            ],
+            [
+              32,
+              0
+            ],
+            [
+              35,
+              0
+            ],
+            [
+              36,
+              0
+            ],
+            [
+              37,
+              128
+            ],
+            [
+              38,
+              128
+            ],
+            [
+              43,
+              8
+            ],
+            [
+              44,
+              104
+            ],
+            [
+              45,
+              20
+            ],
+            [
+              54,
+              8
+            ],
+            [
+              55,
+              8
+            ],
+            [
+              56,
+              120
+            ],
+            [
+              57,
+              8
+            ]
+          ],
+          "chamadas": [
+            [
+              15,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              22,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ],
+            [
+              29,
+              "com/nokia/mid/ui/DirectUtils.getDirectGraphics"
+            ],
+            [
+              39,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              46,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ],
+            [
+              58,
+              "javax/microedition/lcdui/Graphics.drawLine"
+            ],
+            [
+              64,
+              "javax/microedition/lcdui/Graphics.drawLine"
+            ],
+            [
+              67,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              101,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              151,
+              "com/nokia/mid/ui/DirectGraphics.drawPixels"
+            ],
+            [
+              175,
+              "com/nokia/mid/ui/DirectGraphics.drawPixels"
+            ],
+            [
+              204,
+              "com/nokia/mid/ui/DirectGraphics.drawPixels"
+            ],
+            [
+              228,
+              "com/nokia/mid/ui/DirectGraphics.drawPixels"
+            ],
+            [
+              255,
+              "com/nokia/mid/ui/DirectGraphics.drawPixels"
+            ],
+            [
+              279,
+              "com/nokia/mid/ui/DirectGraphics.drawPixels"
+            ],
+            [
+              297,
+              "com/nokia/mid/ui/DirectGraphics.drawPixels"
+            ],
+            [
+              307,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ],
+            [
+              321,
+              "com/nokia/mid/ui/DirectGraphics.drawPixels"
+            ],
+            [
+              338,
+              "com/nokia/mid/ui/DirectGraphics.drawPixels"
+            ],
+            [
+              353,
+              "com/nokia/mid/ui/DirectGraphics.drawPixels"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "a.al"
+            ],
+            [
+              4,
+              "getfield",
+              "a.v"
+            ],
+            [
+              8,
+              "putfield",
+              "a.v"
+            ],
+            [
+              18,
+              "getfield",
+              "a.F"
+            ],
+            [
+              25,
+              "getfield",
+              "a.ai"
+            ],
+            [
+              30,
+              "putfield",
+              "a.s"
+            ],
+            [
+              33,
+              "putfield",
+              "a.ai"
+            ],
+            [
+              42,
+              "getfield",
+              "a.o"
+            ],
+            [
+              48,
+              "getfield",
+              "a.K"
+            ],
+            [
+              51,
+              "getfield",
+              "a.i"
+            ],
+            [
+              71,
+              "getfield",
+              "a.R"
+            ],
+            [
+              73,
+              "getfield",
+              "a.i"
+            ],
+            [
+              76,
+              "getfield",
+              "a.R"
+            ],
+            [
+              78,
+              "getfield",
+              "a.i"
+            ],
+            [
+              90,
+              "getfield",
+              "a.R"
+            ],
+            [
+              92,
+              "getfield",
+              "a.i"
+            ],
+            [
+              104,
+              "getfield",
+              "a.i"
+            ],
+            [
+              108,
+              "putfield",
+              "a.i"
+            ],
+            [
+              110,
+              "getfield",
+              "a.i"
+            ],
+            [
+              115,
+              "putfield",
+              "a.i"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "(JJ)V",
+          "tipo_ret": "void",
+          "n_instr": 63,
+          "apis": {},
+          "constantes": [
+            [
+              34,
+              10000
+            ],
+            [
+              58,
+              10000
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              3,
+              "getfield",
+              "a.l"
+            ],
+            [
+              6,
+              "putfield",
+              "a.else"
+            ],
+            [
+              10,
+              "getfield",
+              "a.j"
+            ],
+            [
+              13,
+              "putfield",
+              "a.a8"
+            ],
+            [
+              16,
+              "getfield",
+              "a.x"
+            ],
+            [
+              18,
+              "getfield",
+              "a.ax"
+            ],
+            [
+              22,
+              "getfield",
+              "a.else"
+            ],
+            [
+              25,
+              "getfield",
+              "a.aQ"
+            ],
+            [
+              27,
+              "getfield",
+              "a.ax"
+            ],
+            [
+              31,
+              "getfield",
+              "a.a8"
+            ],
+            [
+              37,
+              "putfield",
+              "a.c"
+            ],
+            [
+              40,
+              "getfield",
+              "a.aQ"
+            ],
+            [
+              42,
+              "getfield",
+              "a.ax"
+            ],
+            [
+              46,
+              "getfield",
+              "a.else"
+            ],
+            [
+              49,
+              "getfield",
+              "a.x"
+            ],
+            [
+              51,
+              "getfield",
+              "a.ax"
+            ],
+            [
+              55,
+              "getfield",
+              "a.a8"
+            ],
+            [
+              61,
+              "putfield",
+              "a.void"
+            ]
+          ]
+        },
+        {
+          "nome": "new",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 1308,
+          "apis": {},
+          "constantes": [
+            [
+              0,
+              0
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              7
+            ],
+            [
+              12,
+              30000
+            ],
+            [
+              16,
+              30000
+            ],
+            [
+              21,
+              30000
+            ],
+            [
+              25,
+              30000
+            ],
+            [
+              32,
+              0
+            ],
+            [
+              41,
+              10000
+            ],
+            [
+              46,
+              10000
+            ],
+            [
+              60,
+              -10000
+            ],
+            [
+              66,
+              10000
+            ],
+            [
+              82,
+              10000
+            ],
+            [
+              92,
+              10000
+            ],
+            [
+              96,
+              2
+            ],
+            [
+              103,
+              0
+            ],
+            [
+              106,
+              112
+            ],
+            [
+              110,
+              0
+            ],
+            [
+              113,
+              10000
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              15,
+              "getfield",
+              "a.g"
+            ],
+            [
+              24,
+              "getfield",
+              "a.e"
+            ],
+            [
+              31,
+              "getfield",
+              "a.void"
+            ],
+            [
+              37,
+              "getfield",
+              "a.az"
+            ],
+            [
+              44,
+              "getfield",
+              "a.void"
+            ],
+            [
+              49,
+              "getfield",
+              "a.void"
+            ],
+            [
+              56,
+              "getfield",
+              "a.az"
+            ],
+            [
+              63,
+              "getfield",
+              "a.void"
+            ],
+            [
+              69,
+              "getfield",
+              "a.void"
+            ],
+            [
+              76,
+              "getfield",
+              "a.aB"
+            ],
+            [
+              81,
+              "getfield",
+              "a.c"
+            ],
+            [
+              84,
+              "getfield",
+              "a.az"
+            ],
+            [
+              109,
+              "getfield",
+              "a.a0"
+            ],
+            [
+              128,
+              "getfield",
+              "a.aC"
+            ],
+            [
+              131,
+              "getfield",
+              "a.e"
+            ],
+            [
+              136,
+              "getfield",
+              "a.g"
+            ],
+            [
+              290,
+              "getfield",
+              "a.aJ"
+            ],
+            [
+              294,
+              "putfield",
+              "a.long"
+            ],
+            [
+              303,
+              "getfield",
+              "a.a0"
+            ],
+            [
+              311,
+              "putfield",
+              "a.aM"
+            ]
+          ]
+        },
+        {
+          "nome": "if",
+          "desc": "(BBB)V",
+          "tipo_ret": "void",
+          "n_instr": 326,
+          "apis": {},
+          "constantes": [
+            [
+              12,
+              1
+            ],
+            [
+              18,
+              0
+            ],
+            [
+              32,
+              1
+            ],
+            [
+              49,
+              1
+            ],
+            [
+              55,
+              0
+            ],
+            [
+              63,
+              10000
+            ],
+            [
+              76,
+              100
+            ],
+            [
+              85,
+              1
+            ],
+            [
+              88,
+              100
+            ],
+            [
+              97,
+              100
+            ],
+            [
+              104,
+              45
+            ],
+            [
+              109,
+              56
+            ],
+            [
+              114,
+              56
+            ],
+            [
+              117,
+              56
+            ],
+            [
+              129,
+              1
+            ],
+            [
+              134,
+              -57
+            ],
+            [
+              148,
+              100
+            ],
+            [
+              157,
+              0
+            ],
+            [
+              160,
+              56
+            ],
+            [
+              169,
+              1
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "a.az"
+            ],
+            [
+              8,
+              "getfield",
+              "a.az"
+            ],
+            [
+              19,
+              "putfield",
+              "a.a4"
+            ],
+            [
+              22,
+              "getfield",
+              "a.aB"
+            ],
+            [
+              28,
+              "getfield",
+              "a.aB"
+            ],
+            [
+              36,
+              "putfield",
+              "a.be"
+            ],
+            [
+              39,
+              "getfield",
+              "a.az"
+            ],
+            [
+              45,
+              "getfield",
+              "a.az"
+            ],
+            [
+              53,
+              "putfield",
+              "a.bc"
+            ],
+            [
+              56,
+              "putfield",
+              "a.V"
+            ],
+            [
+              58,
+              "getfield",
+              "a.be"
+            ],
+            [
+              62,
+              "getfield",
+              "a.bc"
+            ],
+            [
+              66,
+              "getfield",
+              "a.be"
+            ],
+            [
+              68,
+              "putfield",
+              "a.V"
+            ],
+            [
+              71,
+              "getfield",
+              "a.aB"
+            ],
+            [
+              78,
+              "putfield",
+              "a.aM"
+            ],
+            [
+              81,
+              "getfield",
+              "a.aB"
+            ],
+            [
+              90,
+              "putfield",
+              "a.aL"
+            ],
+            [
+              92,
+              "getfield",
+              "a.aM"
+            ],
+            [
+              94,
+              "getfield",
+              "a.aL"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "(BBB)V",
+          "tipo_ret": "void",
+          "n_instr": 326,
+          "apis": {},
+          "constantes": [
+            [
+              10,
+              1
+            ],
+            [
+              18,
+              0
+            ],
+            [
+              30,
+              1
+            ],
+            [
+              47,
+              1
+            ],
+            [
+              55,
+              0
+            ],
+            [
+              63,
+              10000
+            ],
+            [
+              76,
+              100
+            ],
+            [
+              83,
+              1
+            ],
+            [
+              88,
+              100
+            ],
+            [
+              97,
+              100
+            ],
+            [
+              104,
+              45
+            ],
+            [
+              109,
+              56
+            ],
+            [
+              114,
+              56
+            ],
+            [
+              117,
+              56
+            ],
+            [
+              129,
+              1
+            ],
+            [
+              134,
+              -57
+            ],
+            [
+              148,
+              100
+            ],
+            [
+              157,
+              0
+            ],
+            [
+              160,
+              56
+            ],
+            [
+              169,
+              1
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "a.az"
+            ],
+            [
+              8,
+              "getfield",
+              "a.az"
+            ],
+            [
+              19,
+              "putfield",
+              "a.a4"
+            ],
+            [
+              22,
+              "getfield",
+              "a.aB"
+            ],
+            [
+              28,
+              "getfield",
+              "a.aB"
+            ],
+            [
+              36,
+              "putfield",
+              "a.be"
+            ],
+            [
+              39,
+              "getfield",
+              "a.az"
+            ],
+            [
+              45,
+              "getfield",
+              "a.az"
+            ],
+            [
+              53,
+              "putfield",
+              "a.bc"
+            ],
+            [
+              56,
+              "putfield",
+              "a.V"
+            ],
+            [
+              58,
+              "getfield",
+              "a.be"
+            ],
+            [
+              62,
+              "getfield",
+              "a.bc"
+            ],
+            [
+              66,
+              "getfield",
+              "a.be"
+            ],
+            [
+              68,
+              "putfield",
+              "a.V"
+            ],
+            [
+              71,
+              "getfield",
+              "a.aB"
+            ],
+            [
+              78,
+              "putfield",
+              "a.aM"
+            ],
+            [
+              81,
+              "getfield",
+              "a.aB"
+            ],
+            [
+              90,
+              "putfield",
+              "a.aL"
+            ],
+            [
+              92,
+              "getfield",
+              "a.aM"
+            ],
+            [
+              94,
+              "getfield",
+              "a.aL"
+            ]
+          ]
+        },
+        {
+          "nome": "byte",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 143,
+          "apis": {},
+          "constantes": [
+            [
+              4,
+              -2
+            ],
+            [
+              7,
+              0
+            ],
+            [
+              11,
+              -1
+            ],
+            [
+              14,
+              0
+            ],
+            [
+              18,
+              0
+            ],
+            [
+              21,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              28,
+              -1
+            ],
+            [
+              32,
+              0
+            ],
+            [
+              35,
+              -2
+            ],
+            [
+              39,
+              0
+            ],
+            [
+              42,
+              -3
+            ],
+            [
+              46,
+              0
+            ],
+            [
+              49,
+              -4
+            ],
+            [
+              53,
+              0
+            ],
+            [
+              56,
+              -5
+            ],
+            [
+              60,
+              -1
+            ],
+            [
+              63,
+              -5
+            ],
+            [
+              67,
+              -2
+            ],
+            [
+              70,
+              -5
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "a.ax"
+            ],
+            [
+              5,
+              "putfield",
+              "a.ab"
+            ],
+            [
+              8,
+              "putfield",
+              "a.Z"
+            ],
+            [
+              12,
+              "putfield",
+              "a.ab"
+            ],
+            [
+              15,
+              "putfield",
+              "a.Z"
+            ],
+            [
+              19,
+              "putfield",
+              "a.ab"
+            ],
+            [
+              22,
+              "putfield",
+              "a.Z"
+            ],
+            [
+              26,
+              "putfield",
+              "a.ab"
+            ],
+            [
+              29,
+              "putfield",
+              "a.Z"
+            ],
+            [
+              33,
+              "putfield",
+              "a.ab"
+            ],
+            [
+              36,
+              "putfield",
+              "a.Z"
+            ],
+            [
+              40,
+              "putfield",
+              "a.ab"
+            ],
+            [
+              43,
+              "putfield",
+              "a.Z"
+            ],
+            [
+              47,
+              "putfield",
+              "a.ab"
+            ],
+            [
+              50,
+              "putfield",
+              "a.Z"
+            ],
+            [
+              54,
+              "putfield",
+              "a.ab"
+            ],
+            [
+              57,
+              "putfield",
+              "a.Z"
+            ],
+            [
+              61,
+              "putfield",
+              "a.ab"
+            ],
+            [
+              64,
+              "putfield",
+              "a.Z"
+            ],
+            [
+              68,
+              "putfield",
+              "a.ab"
+            ]
+          ]
+        },
+        {
+          "nome": "for",
+          "desc": "()Z",
+          "tipo_ret": "int",
+          "n_instr": 233,
+          "apis": {},
+          "constantes": [
+            [
+              1,
+              2000
+            ],
+            [
+              12,
+              2000
+            ],
+            [
+              19,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              32,
+              2000
+            ],
+            [
+              51,
+              30000
+            ],
+            [
+              62,
+              30000
+            ],
+            [
+              67,
+              20
+            ],
+            [
+              69,
+              0
+            ],
+            [
+              73,
+              0
+            ],
+            [
+              80,
+              2000
+            ],
+            [
+              99,
+              30000
+            ],
+            [
+              110,
+              30000
+            ],
+            [
+              115,
+              20
+            ],
+            [
+              117,
+              0
+            ],
+            [
+              120,
+              2000
+            ],
+            [
+              131,
+              0
+            ],
+            [
+              137,
+              0
+            ],
+            [
+              144,
+              2000
+            ],
+            [
+              163,
+              30000
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              4,
+              "getfield",
+              "a.c"
+            ],
+            [
+              7,
+              "getfield",
+              "a.void"
+            ],
+            [
+              9,
+              "putfield",
+              "a.a"
+            ],
+            [
+              11,
+              "getfield",
+              "a.a"
+            ],
+            [
+              18,
+              "getfield",
+              "a.void"
+            ],
+            [
+              24,
+              "getfield",
+              "a.void"
+            ],
+            [
+              31,
+              "getfield",
+              "a.void"
+            ],
+            [
+              35,
+              "putfield",
+              "a.void"
+            ],
+            [
+              38,
+              "getfield",
+              "a.c"
+            ],
+            [
+              40,
+              "getfield",
+              "a.a"
+            ],
+            [
+              42,
+              "putfield",
+              "a.c"
+            ],
+            [
+              44,
+              "getfield",
+              "a.aC"
+            ],
+            [
+              46,
+              "getfield",
+              "a.j"
+            ],
+            [
+              49,
+              "getfield",
+              "a.void"
+            ],
+            [
+              57,
+              "getfield",
+              "a.l"
+            ],
+            [
+              60,
+              "getfield",
+              "a.c"
+            ],
+            [
+              72,
+              "getfield",
+              "a.void"
+            ],
+            [
+              79,
+              "getfield",
+              "a.void"
+            ],
+            [
+              83,
+              "putfield",
+              "a.void"
+            ],
+            [
+              86,
+              "getfield",
+              "a.c"
+            ]
+          ]
+        },
+        {
+          "nome": "int",
+          "desc": "()B",
+          "tipo_ret": "signed char",
+          "n_instr": 20,
+          "apis": {},
+          "constantes": [
+            [
+              3,
+              1
+            ],
+            [
+              9,
+              11
+            ],
+            [
+              12,
+              0
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              2,
+              "getfield",
+              "a.w"
+            ],
+            [
+              6,
+              "putfield",
+              "a.w"
+            ],
+            [
+              8,
+              "getfield",
+              "a.w"
+            ],
+            [
+              13,
+              "putfield",
+              "a.w"
+            ],
+            [
+              15,
+              "getfield",
+              "a.aS"
+            ],
+            [
+              17,
+              "getfield",
+              "a.w"
+            ]
+          ]
+        },
+        {
+          "nome": "if",
+          "desc": "(I)V",
+          "tipo_ret": "void",
+          "n_instr": 13862,
+          "apis": {},
+          "constantes": [
+            [
+              2,
+              39
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              6,
+              22
+            ],
+            [
+              9,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              14,
+              0
+            ],
+            [
+              17,
+              2
+            ],
+            [
+              18,
+              0
+            ],
+            [
+              21,
+              3
+            ],
+            [
+              22,
+              0
+            ],
+            [
+              25,
+              4
+            ],
+            [
+              26,
+              0
+            ],
+            [
+              29,
+              5
+            ],
+            [
+              30,
+              0
+            ],
+            [
+              33,
+              6
+            ],
+            [
+              34,
+              0
+            ],
+            [
+              37,
+              7
+            ],
+            [
+              38,
+              0
+            ],
+            [
+              41,
+              8
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              4195,
+              "putfield",
+              "a.bb"
+            ],
+            [
+              4198,
+              "putfield",
+              "a.ax"
+            ],
+            [
+              4201,
+              "putfield",
+              "a.l"
+            ],
+            [
+              4204,
+              "putfield",
+              "a.j"
+            ],
+            [
+              4207,
+              "putfield",
+              "a.ap"
+            ],
+            [
+              4210,
+              "putfield",
+              "a.aC"
+            ],
+            [
+              8950,
+              "putfield",
+              "a.bb"
+            ],
+            [
+              8953,
+              "putfield",
+              "a.ax"
+            ],
+            [
+              8956,
+              "putfield",
+              "a.l"
+            ],
+            [
+              8959,
+              "putfield",
+              "a.j"
+            ],
+            [
+              8962,
+              "putfield",
+              "a.ap"
+            ],
+            [
+              8965,
+              "putfield",
+              "a.aC"
+            ],
+            [
+              13837,
+              "putfield",
+              "a.bb"
+            ],
+            [
+              13840,
+              "putfield",
+              "a.ax"
+            ],
+            [
+              13843,
+              "putfield",
+              "a.l"
+            ],
+            [
+              13846,
+              "putfield",
+              "a.j"
+            ],
+            [
+              13849,
+              "putfield",
+              "a.ap"
+            ],
+            [
+              13852,
+              "putfield",
+              "a.aC"
+            ],
+            [
+              13857,
+              "putfield",
+              "a.ai"
+            ],
+            [
+              13860,
+              "putfield",
+              "a.S"
+            ]
+          ]
+        },
+        {
+          "nome": "do",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 442,
+          "apis": {
+            "javax/microedition/lcdui/Image.createImage": 1,
+            "javax/microedition/lcdui/Image.getGraphics": 1,
+            "javax/microedition/lcdui/Graphics.drawImage": 1,
+            "com/nokia/mid/ui/DirectUtils.getDirectGraphics": 1,
+            "com/nokia/mid/ui/DirectGraphics.getPixels": 28
+          },
+          "constantes": [
+            [
+              0,
+              90
+            ],
+            [
+              1,
+              129
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              11,
+              0
+            ],
+            [
+              12,
+              20
+            ],
+            [
+              20,
+              0
+            ],
+            [
+              22,
+              0
+            ],
+            [
+              23,
+              15
+            ],
+            [
+              24,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              26,
+              15
+            ],
+            [
+              27,
+              45
+            ],
+            [
+              28,
+              4444
+            ],
+            [
+              33,
+              1
+            ],
+            [
+              35,
+              0
+            ],
+            [
+              36,
+              15
+            ],
+            [
+              37,
+              15
+            ],
+            [
+              38,
+              0
+            ],
+            [
+              39,
+              15
+            ],
+            [
+              40,
+              45
+            ]
+          ],
+          "chamadas": [
+            [
+              2,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              5,
+              "javax/microedition/lcdui/Image.getGraphics"
+            ],
+            [
+              13,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ],
+            [
+              15,
+              "com/nokia/mid/ui/DirectUtils.getDirectGraphics"
+            ],
+            [
+              29,
+              "com/nokia/mid/ui/DirectGraphics.getPixels"
+            ],
+            [
+              42,
+              "com/nokia/mid/ui/DirectGraphics.getPixels"
+            ],
+            [
+              55,
+              "com/nokia/mid/ui/DirectGraphics.getPixels"
+            ],
+            [
+              68,
+              "com/nokia/mid/ui/DirectGraphics.getPixels"
+            ],
+            [
+              81,
+              "com/nokia/mid/ui/DirectGraphics.getPixels"
+            ],
+            [
+              94,
+              "com/nokia/mid/ui/DirectGraphics.getPixels"
+            ],
+            [
+              105,
+              "com/nokia/mid/ui/DirectGraphics.getPixels"
+            ],
+            [
+              116,
+              "com/nokia/mid/ui/DirectGraphics.getPixels"
+            ],
+            [
+              127,
+              "com/nokia/mid/ui/DirectGraphics.getPixels"
+            ],
+            [
+              138,
+              "com/nokia/mid/ui/DirectGraphics.getPixels"
+            ],
+            [
+              149,
+              "com/nokia/mid/ui/DirectGraphics.getPixels"
+            ],
+            [
+              160,
+              "com/nokia/mid/ui/DirectGraphics.getPixels"
+            ],
+            [
+              171,
+              "com/nokia/mid/ui/DirectGraphics.getPixels"
+            ],
+            [
+              182,
+              "com/nokia/mid/ui/DirectGraphics.getPixels"
+            ],
+            [
+              193,
+              "com/nokia/mid/ui/DirectGraphics.getPixels"
+            ],
+            [
+              204,
+              "com/nokia/mid/ui/DirectGraphics.getPixels"
+            ]
+          ],
+          "fields": [
+            [
+              9,
+              "getfield",
+              "a.aD"
+            ],
+            [
+              19,
+              "getfield",
+              "a.bd"
+            ],
+            [
+              32,
+              "getfield",
+              "a.bd"
+            ],
+            [
+              45,
+              "getfield",
+              "a.bd"
+            ],
+            [
+              58,
+              "getfield",
+              "a.bd"
+            ],
+            [
+              71,
+              "getfield",
+              "a.bd"
+            ],
+            [
+              84,
+              "getfield",
+              "a.bd"
+            ],
+            [
+              97,
+              "getfield",
+              "a.aG"
+            ],
+            [
+              108,
+              "getfield",
+              "a.ay"
+            ],
+            [
+              119,
+              "getfield",
+              "a.aw"
+            ],
+            [
+              130,
+              "getfield",
+              "a.au"
+            ],
+            [
+              141,
+              "getfield",
+              "a.at"
+            ],
+            [
+              152,
+              "getfield",
+              "a.as"
+            ],
+            [
+              163,
+              "getfield",
+              "a.aq"
+            ],
+            [
+              174,
+              "getfield",
+              "a.ao"
+            ],
+            [
+              185,
+              "getfield",
+              "a.an"
+            ],
+            [
+              196,
+              "getfield",
+              "a.ak"
+            ],
+            [
+              207,
+              "getfield",
+              "a.r"
+            ],
+            [
+              218,
+              "getfield",
+              "a.p"
+            ],
+            [
+              229,
+              "getfield",
+              "a.a3"
+            ]
+          ]
+        },
+        {
+          "nome": "commandAction",
+          "desc": "(Ljavax/microedition/lcdui/Command;Ljavax/microedition/lcdui/Displayable;)V",
+          "tipo_ret": "void",
+          "n_instr": 107,
+          "apis": {
+            "javax/microedition/lcdui/List.getSelectedIndex": 1,
+            "javax/microedition/lcdui/Command.getLabel": 1,
+            "java/lang/String.equals": 1,
+            "javax/microedition/lcdui/Display.setCurrent": 3,
+            "javax/microedition/lcdui/List.set": 3,
+            "java/lang/String.valueOf": 2,
+            "java/lang/String.concat": 1
+          },
+          "constantes": [
+            [
+              13,
+              10
+            ],
+            [
+              18,
+              1
+            ],
+            [
+              21,
+              0
+            ],
+            [
+              24,
+              0
+            ],
+            [
+              27,
+              99
+            ],
+            [
+              30,
+              20
+            ],
+            [
+              33,
+              0
+            ],
+            [
+              49,
+              0
+            ],
+            [
+              53,
+              2
+            ],
+            [
+              59,
+              1
+            ],
+            [
+              63,
+              2
+            ],
+            [
+              71,
+              1
+            ],
+            [
+              81,
+              1
+            ],
+            [
+              85,
+              3
+            ],
+            [
+              101,
+              0
+            ],
+            [
+              104,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              2,
+              "javax/microedition/lcdui/List.getSelectedIndex"
+            ],
+            [
+              5,
+              "javax/microedition/lcdui/Command.getLabel"
+            ],
+            [
+              7,
+              "java/lang/String.equals"
+            ],
+            [
+              12,
+              "javax/microedition/lcdui/Display.setCurrent"
+            ],
+            [
+              43,
+              "javax/microedition/lcdui/Display.setCurrent"
+            ],
+            [
+              56,
+              "javax/microedition/lcdui/List.set"
+            ],
+            [
+              66,
+              "javax/microedition/lcdui/List.set"
+            ],
+            [
+              89,
+              "java/lang/String.valueOf"
+            ],
+            [
+              90,
+              "java/lang/String.valueOf"
+            ],
+            [
+              91,
+              "java/lang/String.concat"
+            ],
+            [
+              93,
+              "javax/microedition/lcdui/List.set"
+            ],
+            [
+              98,
+              "javax/microedition/lcdui/Display.setCurrent"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "a.t"
+            ],
+            [
+              9,
+              "getstatic",
+              "MIDlet1.if"
+            ],
+            [
+              11,
+              "getfield",
+              "a.t"
+            ],
+            [
+              19,
+              "putfield",
+              "a.if"
+            ],
+            [
+              22,
+              "putfield",
+              "a.k"
+            ],
+            [
+              25,
+              "putfield",
+              "a.do"
+            ],
+            [
+              28,
+              "putfield",
+              "a.aW"
+            ],
+            [
+              31,
+              "putfield",
+              "a.B"
+            ],
+            [
+              34,
+              "putfield",
+              "a.char"
+            ],
+            [
+              37,
+              "getfield",
+              "a.C"
+            ],
+            [
+              38,
+              "putfield",
+              "a.ae"
+            ],
+            [
+              40,
+              "getstatic",
+              "MIDlet1.if"
+            ],
+            [
+              42,
+              "getfield",
+              "a.U"
+            ],
+            [
+              46,
+              "getfield",
+              "a.h"
+            ],
+            [
+              50,
+              "putfield",
+              "a.h"
+            ],
+            [
+              52,
+              "getfield",
+              "a.t"
+            ],
+            [
+              60,
+              "putfield",
+              "a.h"
+            ],
+            [
+              62,
+              "getfield",
+              "a.t"
+            ],
+            [
+              70,
+              "getfield",
+              "a.C"
+            ],
+            [
+              74,
+              "putfield",
+              "a.C"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "(I)V",
+          "tipo_ret": "void",
+          "n_instr": 39,
+          "apis": {
+            "javax/microedition/rms/RecordStore.openRecordStore": 1,
+            "javax/microedition/rms/RecordStore.addRecord": 1,
+            "javax/microedition/rms/RecordStore.closeRecordStore": 3
+          },
+          "constantes": [
+            [
+              3,
+              0
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              16,
+              0
+            ],
+            [
+              17,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              4,
+              "javax/microedition/rms/RecordStore.openRecordStore"
+            ],
+            [
+              18,
+              "javax/microedition/rms/RecordStore.addRecord"
+            ],
+            [
+              21,
+              "javax/microedition/rms/RecordStore.closeRecordStore"
+            ],
+            [
+              27,
+              "javax/microedition/rms/RecordStore.closeRecordStore"
+            ],
+            [
+              33,
+              "javax/microedition/rms/RecordStore.closeRecordStore"
+            ]
+          ],
+          "fields": []
+        },
+        {
+          "nome": "a",
+          "desc": "()B",
+          "tipo_ret": "signed char",
+          "n_instr": 40,
+          "apis": {
+            "javax/microedition/rms/RecordStore.openRecordStore": 1,
+            "javax/microedition/rms/RecordStore.getNumRecords": 1,
+            "javax/microedition/rms/RecordStore.getRecord": 1,
+            "javax/microedition/rms/RecordStore.closeRecordStore": 3
+          },
+          "constantes": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              37,
+              0
+            ]
+          ],
+          "chamadas": [
+            [
+              11,
+              "javax/microedition/rms/RecordStore.openRecordStore"
+            ],
+            [
+              15,
+              "javax/microedition/rms/RecordStore.getNumRecords"
+            ],
+            [
+              16,
+              "javax/microedition/rms/RecordStore.getRecord"
+            ],
+            [
+              19,
+              "javax/microedition/rms/RecordStore.closeRecordStore"
+            ],
+            [
+              25,
+              "javax/microedition/rms/RecordStore.closeRecordStore"
+            ],
+            [
+              31,
+              "javax/microedition/rms/RecordStore.closeRecordStore"
+            ]
+          ],
+          "fields": []
+        }
+      ],
+      "apis": {
+        "com/nokia/mid/ui/FullCanvas.<init>": 1,
+        "com/nokia/mid/sound/Sound.<init>": 3,
+        "javax/microedition/lcdui/StringItem.<init>": 2,
+        "javax/microedition/lcdui/Form.<init>": 2,
+        "javax/microedition/lcdui/List.<init>": 1,
+        "java/lang/Throwable.printStackTrace": 1,
+        "javax/microedition/lcdui/Canvas.getHeight": 1,
+        "javax/microedition/lcdui/Image.createImage": 6,
+        "javax/microedition/lcdui/Image.getGraphics": 2,
+        "javax/microedition/lcdui/Graphics.fillRect": 9,
+        "javax/microedition/lcdui/List.append": 6,
+        "javax/microedition/lcdui/Displayable.setCommandListener": 3,
+        "javax/microedition/lcdui/Font.getFont": 1,
+        "javax/microedition/lcdui/Form.append": 2,
+        "javax/microedition/lcdui/Command.<init>": 2,
+        "javax/microedition/lcdui/Displayable.addCommand": 2,
+        "java/lang/Thread.currentThread": 2,
+        "java/lang/Thread.<init>": 1,
+        "java/lang/Thread.start": 2,
+        "javax/microedition/lcdui/List.size": 2,
+        "javax/microedition/lcdui/List.delete": 1,
+        "javax/microedition/lcdui/List.setSelectedIndex": 1,
+        "javax/microedition/lcdui/Display.setCurrent": 6,
+        "com/nokia/mid/sound/Sound.play": 6,
+        "javax/microedition/lcdui/Canvas.repaint": 3,
+        "java/lang/Thread.yield": 1,
+        "java/lang/Thread.sleep": 1,
+        "javax/microedition/lcdui/Graphics.drawImage": 4,
+        "com/nokia/mid/ui/DirectUtils.getDirectGraphics": 2,
+        "javax/microedition/lcdui/Graphics.drawLine": 2,
+        "javax/microedition/lcdui/Graphics.setColor": 3,
+        "com/nokia/mid/ui/DirectGraphics.drawPixels": 16,
+        "javax/microedition/lcdui/Graphics.setFont": 1,
+        "javax/microedition/lcdui/Graphics.drawString": 5,
+        "java/lang/String.valueOf": 4,
+        "java/lang/String.concat": 2,
+        "com/nokia/mid/ui/DirectGraphics.getPixels": 28,
+        "javax/microedition/lcdui/List.getSelectedIndex": 1,
+        "javax/microedition/lcdui/Command.getLabel": 1,
+        "java/lang/String.equals": 1,
+        "javax/microedition/lcdui/List.set": 3,
+        "javax/microedition/rms/RecordStore.openRecordStore": 2,
+        "javax/microedition/rms/RecordStore.addRecord": 1,
+        "javax/microedition/rms/RecordStore.closeRecordStore": 6,
+        "javax/microedition/rms/RecordStore.getNumRecords": 1,
+        "javax/microedition/rms/RecordStore.getRecord": 1
+      },
+      "padroes": [
+        "CANVAS",
+        "TEM_PAINT",
+        "TEM_INPUT",
+        "TEM_RUN",
+        "USA_IMAGE"
+      ]
+    }
+  ],
+  "n_classes": 2
+}
