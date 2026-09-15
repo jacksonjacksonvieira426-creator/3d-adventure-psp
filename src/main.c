@@ -1,4 +1,4 @@
-// 3d-adventure - main.c gerado por V13
+// 3d-adventure - main.c gerado por V14
 #include <pspkernel.h>
 #include <string.h>
 #include <stdlib.h>
@@ -16,50 +16,81 @@ PSP_MAIN_THREAD_ATTR(THREAD_ATTR_USER);
 #define SCR_W 480
 #define SCR_H 272
 
-// Tipos J2ME (auto-detectados)
+// Tipos J2ME (auto-detectados, dedup)
+typedef void* Alert;
+typedef void* AlertType;
 typedef void* Boolean;
 typedef void* Byte;
+typedef void* ByteArrayInputStream;
+typedef void* ByteArrayOutputStream;
+typedef void* Calendar;
 typedef void* Canvas;
 typedef void* Character;
+typedef void* ChoiceGroup;
 typedef void* Class_x;
 typedef void* Command;
 typedef void* CommandListener;
+typedef void* Control;
 typedef void* DataInputStream;
+typedef void* DataOutputStream;
+typedef void* Date;
+typedef void* DateField;
+typedef void* DeviceControl;
 typedef void* DirectGraphics;
 typedef void* DirectUtils;
 typedef void* Display;
 typedef void* Displayable;
 typedef void* Double_x;
+typedef void* Enumeration;
 typedef void* Exception;
 typedef void* Float_x;
 typedef void* Font;
 typedef void* Form;
 typedef void* FullCanvas;
 typedef void* GameCanvas;
+typedef void* Gauge;
 typedef void* Graphics;
+typedef void* Hashtable;
 typedef void* Image;
+typedef void* ImageItem;
 typedef void* InputStream;
 typedef void* Integer;
 typedef void* InterruptedException;
+typedef void* Item;
+typedef void* Iterator;
 typedef void* List;
+typedef void* ListItem;
+typedef void* Locale;
 typedef void* Long_x;
 typedef void* MIDlet;
 typedef void* MIDlet1;
+typedef void* Manager;
 typedef void* Math;
 typedef void* Object;
 typedef void* OutputStream;
+typedef void* Player;
+typedef void* Process;
+typedef void* Queue;
 typedef void* Random;
 typedef void* RecordStore;
 typedef void* Runnable;
+typedef void* Runtime;
+typedef void* Screen;
 typedef void* Short_x;
 typedef void* Sound;
+typedef void* Spacer;
+typedef void* Stack;
 typedef void* String;
 typedef void* StringBuffer;
 typedef void* StringItem;
+typedef void* StringTokenizer;
 typedef void* System;
+typedef void* TextBox;
 typedef void* TextField;
 typedef void* Thread;
 typedef void* Throwable;
+typedef void* Ticker;
+typedef void* TimeZone;
 typedef void* Timer;
 typedef void* TimerTask;
 typedef void* Vector;
@@ -93,31 +124,31 @@ int MapCanvas_lightflag = 0;
 
 // Structs
 struct MIDlet1_s {
-    MIDlet1*     a;
-    Display*     if_x;
-    a*           do_x;
+    void*        a;
+    void*        if_x;
+    void*        do_x;
 };
 
 struct a_s {
-    DirectGraphics* s;
-    Graphics*    Q;
-    Image*       a1;
-    Image*       o;
-    Image*       aD;
-    Image*       F;
-    Image*       for_x;
-    signed char* aV;
-    Sound*       f;
-    signed char* aU;
-    Sound*       d;
-    signed char* aT;
-    Sound*       b;
-    StringItem*  byte;
-    Form*        n;
-    StringItem*  try_x;
-    Form*        U;
-    Font*        aO;
-    List*        t;
+    void*        s;
+    void*        Q;
+    void*        a1;
+    void*        o;
+    void*        aD;
+    void*        F;
+    void*        for_x;
+    void*        aV;
+    void*        f;
+    void*        aU;
+    void*        d;
+    void*        aT;
+    void*        b;
+    void*        byte;
+    void*        n;
+    void*        try_x;
+    void*        U;
+    void*        aO;
+    void*        t;
     int          g;
     int          e;
     int          ab;
@@ -143,11 +174,11 @@ struct a_s {
     int          do_x;
     int          a7;
     int          a6;
-    signed char* aS;
-    signed char  w;
-    signed char  bb;
-    signed char  m;
-    signed char* R;
+    void*        aS;
+    void*        w;
+    void*        bb;
+    void*        m;
+    void*        R;
     short        a4;
     short        aH;
     short        ac;
@@ -170,16 +201,16 @@ struct a_s {
     int          aY;
     int          aX;
     int          aI;
-    signed char  ba;
-    signed char  G;
-    signed char  i;
-    signed char  aP;
-    signed char  aW;
-    signed char  B;
-    signed char  char_x;
-    signed char  ae;
-    signed char  C;
-    signed char  P;
+    void*        ba;
+    void*        G;
+    void*        i;
+    void*        aP;
+    void*        aW;
+    void*        B;
+    void*        char_x;
+    void*        ae;
+    void*        C;
+    void*        P;
     int          if_x;
     int          k;
     int          h;
@@ -232,9 +263,9 @@ struct a_s {
     int**        az;
     short*       av;
     short*       ag;
-    signed char** aC;
+    void*        aC;
     int64_t**    ap;
-    signed char** W;
+    void*        W;
 };
 
 // Prototipos
